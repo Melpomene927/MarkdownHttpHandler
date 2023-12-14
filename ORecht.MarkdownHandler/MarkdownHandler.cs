@@ -16,7 +16,7 @@ namespace System.Web.Handlers
             context.Response.Write(File.ReadAllText(context.Request.PhysicalPath));
 
             context.Response.Write("</xmp>");
-            context.Response.Write("<script src=\"http://strapdownjs.com/v/0.2/strapdown.js\"></script>");
+            context.Response.Write("<script src=\"https://cdn.jsdelivr.net/gh/Naereen/StrapDown.js@master/strapdown.min.js\"></script>");
             context.Response.Write("</html>");
         }
 
