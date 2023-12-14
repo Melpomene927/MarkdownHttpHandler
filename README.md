@@ -1,8 +1,8 @@
 # MarkdownHttpHandler
-ISS Http handler to display makrdown .md files
+增加IIS站台針對Markdown文檔支援度
 
 # Installation
-Place ORecht.MarkdownHandler.dll in the \bin folder of your ISS site
+編譯專案後將dll引用，並增加web.config參數值
 
 Edit `web.config` with:
 ```xml
@@ -35,7 +35,8 @@ Note: Contrary to IIS 6.0, IIS 7.0 does not support multiple extensiosn in the s
 Any `.md` or `.markdown` file is now converted to html and rendered. 
 
 # Implementation detail
-Rendering is done client side using Strapdown.js
+使用 Strapdown.js 將markdown轉為html呈現
 
 # Credits
 http://strapdownjs.com/
+https://github.com/orecht/MarkdownHttpHandler
